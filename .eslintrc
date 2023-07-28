@@ -1,0 +1,109 @@
+{
+  "env": {
+    "node": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "standard",
+    "standard-with-typescript"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "overrides": [
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "plugins": [
+    "react",
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "semi": [2, "never"],
+    "react/display-name": ["off"],
+    "consistent-return": ["off"],
+    "no-underscore-dangle": ["off"],
+    "max-nested-callbacks": ["warn", 3],
+    "eol-last": ["error", "always"],
+    "no-trailing-spaces": "error",
+    "no-multi-spaces": "error",
+    "no-labels": "error",
+    "@typescript-eslint/strict-boolean-expressions": 0,
+    "padding-line-between-statements": [
+      "error",
+      { "blankLine": "always", "prev": "var", "next": "return" }
+    ],
+    "no-multiple-empty-lines":  ["error", { "max": 1 }],
+    "no-plusplus": [
+      "warn",
+      {
+        "allowForLoopAfterthoughts": true
+      }
+    ],
+    "no-param-reassign": ["off"],
+    "no-prototype-builtins": ["off"],
+    "valid-jsdoc": [
+      "warn",
+      {
+        "prefer": {
+          "returns": "return",
+          "property": "prop"
+        },
+        "requireReturn": false
+      }
+    ],
+    "no-unused-vars": ["warn"],
+    "operator-linebreak": [
+      "error",
+      "after",
+      {
+        "overrides": {
+          "?": "ignore",
+          ":": "ignore"
+        }
+      }
+    ],
+    "no-restricted-properties": [
+      2,
+      {
+        "object": "Math",
+        "property": "disallowedPropertyName"
+      }
+    ],
+    "react/state-in-constructor": [1, "never"],
+    "import/prefer-default-export": "off",
+    "react/require-default-props": [2, { "ignoreFunctionalComponents": true }],
+    "comma-dangle": ["error", {
+      "arrays": "always-multiline",
+      "objects": "always-multiline",
+      "imports": "always-multiline",
+      "exports": "always-multiline",
+      "functions": "never"
+    }],
+    "@typescript-eslint/comma-dangle": ["error", {
+      "arrays": "always-multiline",
+      "objects": "always-multiline",
+      "imports": "always-multiline",
+      "exports": "always-multiline",
+      "functions": "never"
+    }],
+    "camelcase": ["error", {"properties": "never"}],
+    "react/jsx-indent": [2, 2, {"checkAttributes": true, "indentLogicalExpressions": true}],
+    "react/jsx-indent-props": [2, { "indentMode": 2, "ignoreTernaryOperator": true}],
+    "max-len": ["error", { "code": 180 }],
+    "no-duplicate-imports": [1],
+    "import/extensions": [0, { "ignorePackages": true }]
+  }
+}

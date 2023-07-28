@@ -1,0 +1,182 @@
+.container {
+  height: 500px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 2px 2px 50px 2px;
+  padding: 25px 10px;
+  color: var(--font-color-light);
+  font-family: var(--main-font);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+    rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+  .header {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .title {
+      font-size: 42px;
+      margin: 0 10px;
+      text-transform: capitalize;
+    }
+
+    .country {
+      background-color: white;
+      border-radius: 50%;
+      width: 25px;
+      height: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--font-color-dark);
+      font-size: 12px;
+      font-weight: bold;
+    }
+  }
+
+  .weatherContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    width: 100%;
+
+    .mode {
+      font-size: 28px;
+    }
+
+    .title {
+      font-size: 26px;
+    }
+  }
+
+  .data {
+    display: flex;
+    padding-bottom: 100px;
+
+    .weatherTemp {
+      display: flex;
+      flex-direction: column;
+      width: 250px;
+
+      .number {
+        font-size: 110px;
+        margin: 0 auto;
+      }
+    }
+
+    .windHum {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      width: 80px;
+
+      .data {
+        padding: 5px 0;
+      }
+
+      .wind {
+        display: flex;
+        flex-direction: column-reverse;
+        font-size: 18px;
+        padding: 10px 0;
+        border-bottom: #ffffff42 solid 1px;
+      }
+      .humidity {
+        display: flex;
+        flex-direction: column;
+        font-size: 18px;
+        padding: 10px 0;
+      }
+    }
+  }
+
+  .sun {
+    display: flex;
+    justify-content: space-evenly;
+
+    .sunWrapper {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+
+      .time {
+        font-size: 30px;
+        padding: 0 10px;
+      }
+
+      .icon {
+        position: relative;
+        font-size: 20px;
+
+        .settings {
+          position: absolute;
+          bottom: 22px;
+          left: -4px;
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
+
+.clear {
+  background: var(--bg-clear);
+}
+
+.clouds {
+  background: var(--bg-cloud);
+}
+
+.thunderstorm {
+  background: var(--bg-storm);
+}
+
+.rain {
+  background: var(--bg-rain);
+}
+
+.drizzle {
+  background: var(--bg-rain);
+}
+
+.squall {
+  background: var(--bg-rain);
+}
+
+.snow {
+  background: var(--bg-snow);
+}
+
+.mist {
+  background: var(--bg-mist);
+}
+
+.haze {
+  background: var(--bg-mist);
+}
+
+.fog {
+  background: var(--bg-mist);
+}
+
+.smoke {
+  background: var(--bg-smoke);
+}
+
+.tornado {
+  background: var(--bg-smoke);
+}
+
+.ash {
+  background: var(--bg-smoke);
+}
+
+.sand {
+  background: var(--bg-sand);
+}
