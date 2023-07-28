@@ -10,7 +10,7 @@ const Dotenv = require('dotenv-webpack');
 module.exports = {
     entry: './src/Index.tsx',
     output: {
-        path: path.join(__dirname, "/docs"),
+        path: path.join(__dirname, "/dist"),
         filename: '[name].[contenthash].js',
         publicPath: '/',
         clean: true
@@ -19,7 +19,7 @@ module.exports = {
         new NodePolyfillPlugin(),
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
-            template: 'index.html', // to import index.html file inside index.ts
+            template: './public/index.html', // to import index.html file inside index.ts
         }),
         new MiniCssExtractPlugin({
             filename: 'css/[name].css',
