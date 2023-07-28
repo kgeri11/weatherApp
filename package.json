@@ -1,4 +1,5 @@
 {
+  "homepage": "https://<kgeri11>.github.io/<weatherApp>",
   "name": "react_weather_app",
   "version": "1.0.0",
   "main": "index.ts",
@@ -12,6 +13,8 @@
     "build": "webpack --mode production --config webpack.prod.js & npx typed-scss-modules src",
     "lint": "eslint --ext .ts --ext .tsx .",
     "lint-fix": "eslint --fix --ext .ts --ext .tsx .",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "prepare": "husky install"
   },
   "devDependencies": {
@@ -38,6 +41,7 @@
     "eslint-plugin-n": "^15.4.0",
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.31.8",
+    "gh-pages": "^5.0.0",
     "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.0",
     "husky": "^8.0.0",

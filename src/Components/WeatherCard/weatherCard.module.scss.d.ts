@@ -5,7 +5,6 @@ export const container: string;
 export const country: string;
 export const data: string;
 export const drizzle: string;
-export const dust: string;
 export const fog: string;
 export const haze: string;
 export const header: string;
