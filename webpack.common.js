@@ -19,7 +19,8 @@ module.exports = {
         new NodePolyfillPlugin(),
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
-            template: './public/index.html' // to import index.html file inside index.ts
+            template: './public/index.html', // to import index.html file inside index.ts
+            template: './docs/index.html' // to import index.html file inside index.ts
         }),
         new MiniCssExtractPlugin({
             filename: 'css/[name].css',
