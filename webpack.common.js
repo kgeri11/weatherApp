@@ -10,7 +10,7 @@ const Dotenv = require('dotenv-webpack');
 module.exports = {
     entry: './src/Index.tsx',
     output: {
-        path: path.join(__dirname, "/dist"),
+        path: path.join(__dirname, "/docs"),
         filename: '[name].[contenthash].js',
         publicPath: '/',
         clean: true
