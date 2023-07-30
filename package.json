@@ -1,5 +1,4 @@
 {
-  "homepage": "https://<kgeri11>.github.io/<weatherApp>",
   "name": "react_weather_app",
   "version": "1.0.0",
   "main": "index.ts",
@@ -13,8 +12,6 @@
     "build": "webpack --mode production --config webpack.prod.js & npx typed-scss-modules src",
     "lint": "eslint --ext .ts --ext .tsx .",
     "lint-fix": "eslint --fix --ext .ts --ext .tsx .",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "prepare": "husky install"
   },
   "devDependencies": {
