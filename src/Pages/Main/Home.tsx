@@ -6,6 +6,7 @@ import Button from '../../Components/Button'
 import moment from 'moment'
 
 const Home = (): JSX.Element => {
+  //TODO simplify with object
   const [inputValue, setInputValue] = useState<string>('')
   const [city, setCity] = useState<string>('')
   const [country, setCountry] = useState<string>('')
